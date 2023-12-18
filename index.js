@@ -16,6 +16,10 @@ app.use(express.json());
 app.listen(PORT, () => {
   console.log(`Server listening at http://localhost:${PORT}`);
 });
+app.get("/",(request,response)=>{
+  const greetings = {greet:"Hello"}
+return (response.send(greetings));
+})
 
 app.post('/getWeather', async (request,response)=>{
    
