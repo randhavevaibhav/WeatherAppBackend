@@ -36,3 +36,5 @@ app.post('/getWeather', async (request,response)=>{
 
 
 })
+
+export default app;
